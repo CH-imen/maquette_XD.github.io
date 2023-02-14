@@ -1,0 +1,58 @@
+/*=============== SEARCH ===============*/
+.search {
+    height: 54px;
+    border-radius: var(--border-radius-mob);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--mb-2-5);
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+
+    @include media (tablet) { 
+        max-width: 537px;
+        height: 94px;
+    }
+
+  input {
+    float: left;
+    height:54px;
+    border: 0;
+    background: #fff;
+    border-radius: var(--border-radius-mob);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    padding-left: 1.875rem;
+    width: 60%;
+  
+    &:focus {
+      outline: 0;
+      background:transparent;
+    }
+
+    @include media (tablet) { height: 94px; }
+  }
+    
+  button {
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 54px;
+    font-size: var(--normal-font-size) ;
+    font-weight: var(--font-extrabold);
+    width: 72px;
+    color: #fff;
+    background: var(--first-color);
+    border-radius: var(--border-radius-mob);
+  
+    &:hover {
+      background-color: var(--third-color);
+      
+    }
+    
+    @include media (tablet) {
+      height: 94px;
+      width: 150px;
+    }
+  } 
+}

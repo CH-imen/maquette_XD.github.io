@@ -1,0 +1,20 @@
+
+/*=============== Mixins Mediaqueries ===============*/
+@mixin media( $res ) {
+
+	@if tablet == $res {
+		@media only screen and (min-width: 767px) {	@content; }
+	}
+
+	@if wideTablet == $res {
+		@media only screen and (min-width: 992px) { @content; }
+	}
+
+	@if desktop == $res {
+		@media only screen and (min-width: 1200px) { @content; }
+	}
+
+	@if wide == $res {
+		@media only screen and (min-width: 1400px) { @content; }
+	}
+}

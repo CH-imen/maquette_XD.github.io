@@ -1,0 +1,24 @@
+/*=============== BUTTONS ===============*/
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #fff; 
+    padding: 0.93rem 0.75rem;
+    border-radius: var(--border-radius-mob);
+    transition: .3s;
+    
+    &:hover { 
+        background-color: var(--third-color) ;
+    }
+
+    @include media (tablet) {
+        width: max-content;
+        padding: 2.12rem 2.81rem;
+        border-radius: var(--border-radius-desk);
+        font-size: 1.25rem;
+    }
+}

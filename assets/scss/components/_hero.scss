@@ -1,0 +1,61 @@
+/*=============== Hero ===============*/
+.hero {
+    margin-top: 3.75rem;
+    margin-bottom: 5rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @include media (desktop) {
+            flex-direction: row-reverse;
+            gap: 10.5rem;
+        }
+    }
+
+    &__title {
+        font-size: var(--biggest-font-size);
+        line-height: var(--biggest-line-height);
+        font-weight: var(--font-extrabold);
+        text-align: var(--align-text);
+        max-width: 300px;
+        max-width: 270px;
+        margin: 0 auto;
+        margin-bottom: var(--mb-2-5);
+        
+        @include media (tablet) {
+            max-width: 466px;
+            margin: 0;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__description {
+        font-size: var(--normal-font-size);
+        line-height: var(--normal-line-height);
+        margin-bottom: var(--mb-2-5);
+        text-align: var(--align-text);
+    }
+
+    &__souscriver {
+        max-width: 270px;
+        margin: 0 auto;
+        margin-bottom: var(--mb-3);
+        display: flex;
+        align-items: start;
+        
+        @include media (desktop) { align-items: center; }
+
+        @include media (tablet) { max-width: initial; }
+
+        p {
+            color: var(--first-color);
+            line-height: var(--normal-line-height);
+            text-align: var(--align-text);
+            font-weight: var(--font-extrabold);
+            
+            span { text-decoration: underline; }
+        }
+    }
+}

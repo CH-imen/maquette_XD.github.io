@@ -1,0 +1,49 @@
+/*=============== FOOTER ===============*/
+.footer {
+    background-color: var(--third-color);
+    padding-bottom: 4.5rem;
+
+    @include media (desktop) { padding-bottom: 0; }
+
+     &__container {
+
+        @include media (desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+     }
+
+    &__logo {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 2.375rem;
+        padding-bottom: 3.313rem;
+
+        @include media (desktop) { 
+        padding-right: 2.313rem;
+        padding-bottom: 4.125rem;
+        padding-top: 4.125rem; 
+        
+        }  
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media (desktop) { flex-direction: row; }
+    }
+
+    &__title {
+        color: var(--white-color);
+        font-size: 0.625rem;
+        font-weight: var(--font-regular);
+
+        @include media (tablet) { font-size: 1.063rem; }
+    }
+    
+    &__img { padding: 1rem; }
+
+}

@@ -1,0 +1,67 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 2.18rem;
+
+    /*========== Colors ==========*/
+    --first-color: #FFC759;
+    --bg-color:#F4F7FA;
+    --third-color:#C2CAD1;
+    --text-color:#575756;
+    --white-color: #FFF;
+    --number-color:#C2CAD1;
+    --bg-block-tow:#E0E9F1;
+
+    $bgcolor:#1f6bad;
+    /*========== other ==========*/
+    --shadow: 0 3px 20px rgb(0 0 0 /10%);
+    --border-radius-mob: 10px;
+    --border-radius-desk: 20px;
+    --align-text: center;
+  
+    /*========== Font and typography ==========*/
+    --body-font: 'Open Sans', sans-serif;
+    --biggest-font-size: 1.875rem;
+    --normal-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --smaller-font-size: 0.625;
+
+    --biggest-line-height: 2.188rem;
+    --normal-line-height: 1.5rem;
+    --small-line-height: 1.375rem;
+    --smaller-line-height: 1.25rem;
+
+    /*========== Responsive typography ==========*/
+    @media screen and (min-width: 767px){
+    --biggest-font-size: 3.75rem;
+    --normal-font-size: 1.875rem;
+    --h4-font-size: 1.875rem;
+    --smaller-font-size: 0.75rem;
+
+    --biggest-line-height: 4.375rem;
+    --normal-line-height: 2.188rem;
+    --small-line-height: 2.563rem;
+    --smaller-line-height: 1.5rem;
+
+    --align-text: left;
+    --p-2: 0;
+    }
+
+    /*========== Font weight ==========*/
+    --font-light:300;
+    --font-regular:400;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+    /*========== Margenes ==========*/
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3.25rem;
+    --mb-100: 6.813rem;
+    --p-2: 2rem;
+    --m-block:0 8.625rem;
+
+}

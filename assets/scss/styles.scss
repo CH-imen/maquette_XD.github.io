@@ -1,0 +1,14 @@
+/*=============== Import of partial files ===============*/
+@import 'config/variables';
+@import 'config/mixins';
+
+@import 'layout/layout';
+
+@import 'base/base';
+@import 'base/buttons';
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/search';
+@import 'components/about';
+@import 'components/footer';
